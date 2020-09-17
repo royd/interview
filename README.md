@@ -14,4 +14,4 @@ It is necessary to do without client-server interaction, you can use SQLite or S
 Also need to add unit tests.
 
 #### Example how it should look
-![books](https://user-images.githubusercontent.com/69201554/92303769-c0ef9300-ef80-11ea-8042-95d72637162c.gif)
+![books](https://user-images.githubusercontent.com/69201554/93488470-12980600-f90f-11ea-92a3-2c17e6b1658a.gif)
