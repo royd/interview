@@ -1,0 +1,11 @@
+const actionAddBook = 'Add Book';
+const appTitle = 'Books';
+const authorLabel = 'Author';
+const authorHint = 'Enter the author of the book';
+const errorInvalidUrl = 'Invalid URL';
+const errorRequiredField = 'Field is required';
+const imageUrlLabel = 'Image URL';
+const imageUrlHint = 'Enter the URL of the book cover';
+const saveLabel = 'Save';
+const titleLabel = 'Title';
+const titleHint = 'Enter the title of the book';
