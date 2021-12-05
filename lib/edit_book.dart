@@ -12,6 +12,11 @@ class EditBook extends StatefulWidget {
     Key? key,
   }) : super(key: key);
 
+  static const titleKey = ValueKey('edit_book_title');
+  static const authorsKey = ValueKey('edit_book_authors');
+  static const imageUrlKey = ValueKey('edit_book_image_url');
+  static const saveButtonKey = ValueKey('edit_book_save_button');
+
   final BookDto? initialData;
 
   @override
@@ -89,6 +94,7 @@ class _EditBookState extends State<EditBook> {
               child: Column(
                 children: [
                   TextFormField(
+                    key: EditBook.titleKey,
                     controller: _titleController,
                     decoration: InputDecoration(
                       labelText: titleLabel,
@@ -97,6 +103,7 @@ class _EditBookState extends State<EditBook> {
                     validator: _validateRequiredText,
                   ),
                   TextFormField(
+                    key: EditBook.authorsKey,
                     controller: _authorsController,
                     decoration: InputDecoration(
                       labelText: authorLabel,
@@ -105,6 +112,7 @@ class _EditBookState extends State<EditBook> {
                     validator: _validateRequiredText,
                   ),
                   TextFormField(
+                    key: EditBook.imageUrlKey,
                     controller: _imageUrlController,
                     decoration: InputDecoration(
                       labelText: imageUrlLabel,
@@ -118,6 +126,7 @@ class _EditBookState extends State<EditBook> {
                     ),
                     width: double.infinity,
                     child: MaterialButton(
+                      key: EditBook.saveButtonKey,
                       onPressed: () {
                         final form = _formKey.currentState!;
                         if (form.validate()) {

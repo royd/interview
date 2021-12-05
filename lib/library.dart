@@ -16,6 +16,8 @@ class Library extends StatefulWidget {
     Key? key,
   }) : super(key: key);
 
+  static const addBookButtonKey = ValueKey('library_add_book');
+
   final String title;
 
   @override
@@ -56,6 +58,7 @@ class _LibraryState extends State<Library> {
         },
       ),
       floatingActionButton: FloatingActionButton(
+        key: Library.addBookButtonKey,
         onPressed: _onEdit,
         tooltip: actionAddBook,
         child: Icon(
